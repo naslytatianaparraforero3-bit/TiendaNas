@@ -1,5 +1,7 @@
-package com.tunombre.tienda.excepiton;
+package com.tunombre.tienda.exception;
 
-public class BadRequestException {
-    
+public class BadRequestException extends RuntimeException {
+    public BadRequestException(String message) {
+        super(message);
+    }
 }

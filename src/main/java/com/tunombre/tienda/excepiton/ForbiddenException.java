@@ -1,5 +1,7 @@
-package com.tunombre.tienda.excepiton;
+package com.tunombre.tienda.exception;
 
-public class ForbiddenException {
-    
+public class ForbiddenException extends RuntimeException {
+    public ForbiddenException(String message) {
+        super(message);
+    }
 }

@@ -1,5 +1,7 @@
-package com.tunombre.tienda.excepiton;
+package com.tunombre.tienda.exception;
 
-public class UnauthorizedException {
-    
+public class UnauthorizedException extends RuntimeException {
+    public UnauthorizedException(String message) {
+        super(message);
+    }
 }
